@@ -1,6 +1,8 @@
 var arra=[12,25,3,13,5,6,1,0,25,0,5]
 
 function Mysort(MyArray){
+    
+    document.getElementById('inputArray').innerHTML=MyArray.toString();
     var temp,i,j;
     var n=MyArray.length;
 
@@ -15,7 +17,11 @@ function Mysort(MyArray){
         }
 
     }
+     
+document.getElementById('ResultDiv').innerHTML=MyArray.toString();
     return MyArray;
 }
 
-console.log(Mysort(arra))
+setTimeout(()=>{
+    console.log(Mysort(arra))
+},2000);
